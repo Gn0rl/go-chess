@@ -2,79 +2,80 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .profileHeader {
+    font-family: "Arial", sans-serif;
+}
+
+.profileHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 2px solid #1f1f1f;
-  }
-  
-  .rating {
+}
+
+.rating {
     background-color: #1f1f1f;
     padding: 10px 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .ratingLabel {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ratingLabel {
     font-weight: bold;
     margin-right: 8px;
-  }
-  
-  .ratingValue {
+}
+
+.ratingValue {
     font-size: 1.2em;
     font-weight: bold;
     color: #2c3e50;
-  }
-  
-  .statsSection, .gamesSection {
+}
+
+.statsSection,
+.gamesSection {
     margin-bottom: 30px;
     background-color: #1f1f1f;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .statsGrid {
+}
+
+.statsGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 15px;
-  }
-  
-  .statItem {
+}
+
+.statItem {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
     background-color: #0a0a0a;
     border-radius: 6px;
-    transition: transform 0.2s;
-  }
-  
-  .statItem:hover {
+    transition: 0.2s;
+}
+
+.statItem:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .statLabel {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.statLabel {
     font-size: 0.9em;
     color: #666;
     margin-bottom: 5px;
-  }
-  
-  .statValue {
+}
+
+.statValue {
     font-size: 1.4em;
     font-weight: bold;
     color: #2c3e50;
-  }
-  
-  .gamesHeader {
+}
+
+.gamesHeader {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     padding: 10px 15px;
@@ -82,75 +83,75 @@
     border-radius: 6px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .gameItem {
+}
+
+.gameItem {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     padding: 12px 15px;
     border-bottom: 1px solid #1f1f1f;
     transition: background-color 0.2s;
-  }
-  
-  .gameItem:hover {
+}
+
+.gameItem:hover {
     background-color: rgb(54, 54, 54);
-  }
-  
-  .opponent {
+}
+
+.opponent {
     font-weight: bold;
-  }
-  
-  .result {
+}
+
+.result {
     font-weight: bold;
-  }
-  
-  .win {
+}
+
+.win {
     color: #27ae60;
-  }
-  
-  .loss {
+}
+
+.loss {
     color: #e74c3c;
-  }
-  
-  .draw {
+}
+
+.draw {
     color: #f39c12;
-  }
-  
-  .loading {
+}
+
+.loading {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
     font-size: 1.2em;
     color: #666;
-  }
-  
-  .noGames {
+}
+
+.noGames {
     text-align: center;
     color: #666;
     padding: 20px;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .statsGrid {
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    .gamesHeader, .gameItem {
-      grid-template-columns: 2fr 1fr 1fr;
+
+    .gamesHeader,
+    .gameItem {
+        grid-template-columns: 2fr 1fr 1fr;
     }
-    
+
     .gamesHeader span:nth-child(4),
     .gamesHeader span:nth-child(5),
     .gameItem span:nth-child(4),
     .gameItem span:nth-child(5) {
-      display: none;
+        display: none;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .statsGrid {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
-  }
-  
+}
