@@ -1,0 +1,79 @@
+.homeContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .heroSection {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .heroSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heroSection p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .quickPlaySection {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .quickPlaySection h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .timeControls {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .timeControlButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .timeControlButton:hover {
+    background-color: #34495e;
+    transform: translateY(-5px);
+  }
+  
+  .time {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .label {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .timeControls {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .timeControlButton {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
